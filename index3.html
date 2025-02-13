@@ -62,7 +62,7 @@
         .submit-btn {
             background: linear-gradient(179deg, #f27060, #097c79);
             border: 2px solid #0a00ff;
-            box-shadow: 0 0 10px rgba(0, 94, 255, 0.8);
+            box-shadow: 0 0 10px rgb(10 105 93);
             color: white;
             border: none;
             padding: 12px 25px;
@@ -230,7 +230,7 @@
     border-radius: 30px;
     transition:  0.3s ease;
     border: 2px solid #ffffff;
-    box-shadow: 0 0 10px rgb(23 86 107 / 80%);
+    box-shadow: 0 0 10px rgb(10 105 93);
 }
 
 .download-btn i {
@@ -246,8 +246,8 @@
     justify-content: center; /* Horizontal center */
     align-items: center; /* Vertical center */
     background: linear-gradient(179deg, #f27060, #097c79); /* Stylish yellow gradient */
-    border: 2px solid #097c79; /* Golden yellow border */
-    padding: 12px 20px;
+    border: 2px solid #ffffff; /* Golden yellow border */
+    padding: 9px 8px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -256,7 +256,7 @@
     max-width: 100%;
     white-space: nowrap;
     margin: 10px auto; /* Upar aur neeche space */
-    box-shadow: 0 0 10px rgba(0, 94, 255, 0.8); /* Neon glow effect */
+    box-shadow: 0 0 10px rgb(10 105 93); /* Neon glow effect */
     color: white; /* UPI ID ka text white */
 }
 
@@ -351,16 +351,16 @@
             <div class="qr-code">
                 <img src="qr-codes.jpg" alt="QR Code">
 
-                <p3><strong>PAY FOR UPI</strong><i class="fa-solid fa-link"></i></p3>
+                <a href="qr-codes.jpg" download="qr-codes.jpg" class="download-btn">
+                    <i class="fa-solid fa-download"></i> DOWNLOAD QR
+                </a>
+
+                <p class="special-text">If you want to pay using UPI, click on the UPI button below.👇</p>
 
                 <button class="upi-copy-button" onclick="copyUPIID()">
                     <span id="upi-text">paytm.s188qqc@pty</span>
                     <i class="fas fa-copy"></i>
                 </button>
-
-                <a href="qr-codes.jpg" download="qr-codes.jpg" class="download-btn">
-                    <i class="fa-solid fa-download"></i> DOWNLOAD QR
-                </a>
                 
 
                 <form id="paymentForm">
